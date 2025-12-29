@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "project": "DevBrows Portfolio Site",
+    "date": "2025-11-19",
+    "prepared_by": "Software Development Manager"
+  },
+  "product_overview": "DevBrows Portfolio Site is a personal portfolio web application built using modern technologies like Next.js 15 with a focus on modularity, theme customization, and reusable UI components. It serves as a professional landing platform showcasing about, services, work portfolio, and contact information with a sleek, black and purple themed interface.",
+  "core_goals": [
+    "Provide a responsive and visually appealing personal portfolio website.",
+    "Enable dark/light theme toggling with a custom black and purple color palette.",
+    "Showcase personal information, services offered, and portfolio work in clear, well-structured sections.",
+    "Implement a reusable UI component library ensuring consistent design and interactions.",
+    "Facilitate seamless external linking for social media and portfolio contact methods.",
+    "Optimize the user experience with animated reveals, custom cursors, and accessible UI patterns.",
+    "Maintain a scalable and maintainable codebase using TypeScript, React, and Next.js App Router."
+  ],
+  "key_features": [
+    "Global theming with dark/light mode support and a custom black and purple color scheme.",
+    "Landing page structured into sections: About, Services, Work, Contact, plus footer and interactive overlays (grain effect, magnetic button, custom cursor).",
+    "Reusable UI component library built on Radix UI and Tailwind CSS, including buttons, dialogs, forms, navigation, feedback components, carousel, calendar, and more.",
+    "Custom React hooks for device detection, scroll/visibility reveal animations, and toast notifications.",
+    "Utility functions for class merging and other helpers.",
+    "Fixed footer with DevBrows attribution linked externally.",
+    "Hardcoded social media URLs with proper external linking behaviours.",
+    "Next.js 15 App Router layout with font and global style setup."
+  ],
+  "user_flow_summary": [
+    "User lands on the home page and views the hero section followed by about, services, and work sections.",
+    "User scrolls through content with smooth reveal animations enhancing engagement.",
+    "User interacts with buttons, forms, and dialogs built from the UI component library.",
+    "User clicks social media icons in the contact section that open external links in new tabs.",
+    "User toggles theme between dark and light modes, observing a black and purple color theme.",
+    "User accesses footer with DevBrows link for attribution and possibly navigates externally."
+  ],
+  "validation_criteria": [
+    "The site loads without npm installation errors after upgrading dependencies like vaul.",
+    "Theme toggle works correctly applying the black and purple palette consistently across all components.",
+    "All sections (about, services, work, contact) render properly and are navigable via scrolling.",
+    "Social media icons in contact section have correct hardcoded URLs and open in new tabs.",
+    "UI components function visually and interactively as expected according to Radix UI patterns.",
+    "Custom hooks trigger expected behaviors: device detection, animation reveal, toast notifications.",
+    "Footer is fixed, full-width, contains the DevBrows link, and the link opens externally.",
+    "Automated tests via Testsprite run successfully against the live development server."
+  ],
+  "code_summary": {
+    "tech_stack": [
+      "TypeScript",
+      "React",
+      "Next.js 15 (App Router)",
+      "Tailwind CSS",
+      "Radix UI",
+      "Sonner",
+      "Zod",
+      "React Hook Form"
+    ],
+    "features": [
+      {
+        "name": "Root layout and global theming",
+        "description": "Next.js app router layout with global styles, font setup, and theme provider integrating dark/light modes.",
+        "files": [
+          "app/layout.tsx",
+          "app/globals.css",
+          "styles/globals.css",
+          "components/theme-provider.tsx"
+        ]
+      },
+      {
+        "name": "Landing page composition",
+        "description": "Top-level page that assembles hero and content sections (about, services, work, contact) plus footer and global overlays.",
+        "files": [
+          "app/page.tsx",
+          "components/sections/about-section.tsx",
+          "components/sections/services-section.tsx",
+          "components/sections/work-section.tsx",
+          "components/sections/contact-section.tsx",
+          "components/custom-cursor.tsx",
+          "components/grain-overlay.tsx",
+          "components/magnetic-button.tsx"
+        ]
+      },
+      {
+        "name": "UI component library",
+        "description": "Reusable UI primitives (buttons, dialogs, forms, navigation, feedback components, etc.) built on Radix UI and Tailwind for consistent styling.",
+        "files": [
+          "components/ui/button.tsx",
+          "components/ui/card.tsx",
+          "components/ui/dialog.tsx",
+          "components/ui/dropdown-menu.tsx",
+          "components/ui/input.tsx",
+          "components/ui/textarea.tsx",
+          "components/ui/tabs.tsx",
+          "components/ui/accordion.tsx",
+          "components/ui/toast.tsx",
+          "components/ui/toaster.tsx",
+          "components/ui/tooltip.tsx",
+          "components/ui/sidebar.tsx",
+          "components/ui/sheet.tsx",
+          "components/ui/alert-dialog.tsx",
+          "components/ui/carousel.tsx",
+          "components/ui/calendar.tsx",
+          "components/ui/table.tsx"
+        ]
+      },
+      {
+        "name": "Custom hooks",
+        "description": "Small hooks for device detection, scroll/visibility reveal animations, and toast notifications.",
+        "files": [
+          "hooks/use-mobile.ts",
+          "hooks/use-reveal.ts",
+          "hooks/use-toast.ts",
+          "components/ui/use-mobile.tsx",
+          "components/ui/use-toast.ts"
+        ]
+      },
+      {
+        "name": "Utility functions",
+        "description": "Shared utility helpers for class name merging and other small cross-cutting concerns.",
+        "files": [
+          "lib/utils.ts"
+        ]
+      }
+    ]
+  }
+}

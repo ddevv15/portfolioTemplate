@@ -1,0 +1,311 @@
+[
+  {
+    "id": "TC001",
+    "title": "Site loads without errors after dependency upgrades",
+    "description": "Verify that the DevBrows Portfolio Site loads fully without npm installation errors or runtime errors after upgrading dependencies including 'vaul'.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Pull latest code with upgraded dependencies"
+      },
+      {
+        "type": "action",
+        "description": "Run 'npm install' to install dependencies"
+      },
+      {
+        "type": "action",
+        "description": "Run development server using 'npm run dev'"
+      },
+      {
+        "type": "assertion",
+        "description": "Check that no errors occurred during 'npm install'"
+      },
+      {
+        "type": "assertion",
+        "description": "Check that the development server starts and site loads without runtime errors"
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "Theme toggle functionality with black and purple palette",
+    "description": "Verify that toggling the theme switch correctly applies the black and purple color scheme consistently across all UI components in both light and dark modes.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the home page"
+      },
+      {
+        "type": "assertion",
+        "description": "Check the initial theme (light or dark) matches the black and purple palette"
+      },
+      {
+        "type": "action",
+        "description": "Click on the theme toggle control"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that the theme switches to the opposite mode"
+      },
+      {
+        "type": "assertion",
+        "description": "Validate color palette changes appropriately with black and purple colors applied"
+      },
+      {
+        "type": "action",
+        "description": "Toggle theme multiple times to verify stability and no visual glitches"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm all UI components update their styling accordingly on each toggle"
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Navigation and rendering of all landing page sections",
+    "description": "Verify that all main sections (About, Services, Work, Contact) and footer render properly, and users can navigate through them by scrolling with smooth reveal animations.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Load the home page"
+      },
+      {
+        "type": "assertion",
+        "description": "Check that the About section is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll down to the Services section"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm Services section content is properly rendered and visible"
+      },
+      {
+        "type": "action",
+        "description": "Continue scrolling to the Work section"
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure Work section is loaded and visible with portfolio items"
+      },
+      {
+        "type": "action",
+        "description": "Scroll further to the Contact section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify Contact section with social media icons and contact info is fully visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer"
+      },
+      {
+        "type": "assertion",
+        "description": "Check fixed footer is present with DevBrows link"
+      },
+      {
+        "type": "assertion",
+        "description": "Observe that reveal animations trigger smoothly during scrolling"
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "Social media icons open correct hardcoded URLs in new tabs",
+    "description": "Test that the social media icons in the Contact section open their designated hardcoded URLs in new browser tabs/windows.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Contact section"
+      },
+      {
+        "type": "action",
+        "description": "Click on each social media icon one by one"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that a new browser tab opens for each click"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm the opened URL matches the expected hardcoded social media URL"
+      },
+      {
+        "type": "assertion",
+        "description": "Check that clicking multiple icons opens multiple tabs correctly without blocking popups"
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "UI components function visually and interactively per Radix UI patterns",
+    "description": "Validate functional and visual behavior of reusable UI components such as buttons, dialogs, forms, navigation, carousel, calendar, toast notifications, etc. built on Radix UI and Tailwind CSS.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate through the site to locate and interact with UI components: buttons, dialogs, forms, carousel, calendar"
+      },
+      {
+        "type": "action",
+        "description": "Click buttons and verify expected behaviors"
+      },
+      {
+        "type": "action",
+        "description": "Open dialogs and verify focus management and keyboard navigation"
+      },
+      {
+        "type": "action",
+        "description": "Fill form inputs with valid and invalid data and submit"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm UI feedback and validation messages appear correctly"
+      },
+      {
+        "type": "action",
+        "description": "Trigger toast notifications and verify timely appearance and dismissal"
+      },
+      {
+        "type": "action",
+        "description": "Test carousel interactions (next, previous, swipe) and verify content changes"
+      },
+      {
+        "type": "action",
+        "description": "Check calendar component selection and display"
+      },
+      {
+        "type": "assertion",
+        "description": "Validate all components visually conform to black and purple theme and respond to interactions"
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "Custom hooks trigger expected behaviors",
+    "description": "Test custom React hooks: use-mobile for device detection, use-reveal for scroll/visibility animations, and use-toast for toast notifications behave as intended.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Simulate device types (mobile and desktop) and verify use-mobile detects device correctly"
+      },
+      {
+        "type": "action",
+        "description": "Scroll through page to activate use-reveal hooks"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm elements reveal smoothly on scroll as expected"
+      },
+      {
+        "type": "action",
+        "description": "Trigger toast notifications via UI or programmatic invocation"
+      },
+      {
+        "type": "assertion",
+        "description": "Check that toast notifications appear and dismiss correctly using use-toast hook"
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Fixed footer presence and external DevBrows link validation",
+    "description": "Verify the footer remains fixed and full width at the bottom, includes the DevBrows attribution link which opens externally in a new tab.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Load home page and scroll to bottom"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that footer remains visible and fixed regardless of scroll position"
+      },
+      {
+        "type": "assertion",
+        "description": "Check footer spans full width of the viewport"
+      },
+      {
+        "type": "action",
+        "description": "Click on the DevBrows link in the footer"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm the link opens in a new tab"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the URL of the opened tab is the correct external DevBrows site"
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Utility function class merging correctness",
+    "description": "Test the utility function that merges class names to ensure correct concatenation and override behavior for dynamic styling.",
+    "category": "functional",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Invoke class merging utility with various class name inputs including duplicates, conditional classes, and conflicting styles"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the output string contains all expected classes merged correctly without duplicates"
+      },
+      {
+        "type": "assertion",
+        "description": "Check that conditional classes are included or excluded as intended"
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "Accessibility checks on UI components and custom UI elements",
+    "description": "Confirm UI components and custom elements like custom cursor, magnetic buttons, and grain overlays comply with accessibility standards including keyboard navigation and ARIA attributes.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate UI components using keyboard only (tab, shift+tab, enter, space)"
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure focus outlines are visible and navigation order is logical"
+      },
+      {
+        "type": "action",
+        "description": "Use screen reader tools to inspect ARIA attributes and element roles"
+      },
+      {
+        "type": "assertion",
+        "description": "Validate ARIA roles and labels are present and accurate on dialogs, buttons, forms"
+      },
+      {
+        "type": "action",
+        "description": "Test interactive custom elements like magnetic buttons and cursors for predictable behavior"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm no keyboard traps or visual glitches occur"
+      }
+    ]
+  }
+]

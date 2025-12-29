@@ -1,0 +1,85 @@
+{
+  "tech_stack": [
+    "TypeScript",
+    "React",
+    "Next.js 15 (App Router)",
+    "Tailwind CSS",
+    "Radix UI",
+    "Sonner",
+    "Zod",
+    "React Hook Form"
+  ],
+  "features": [
+    {
+      "name": "Root layout and global theming",
+      "description": "Next.js app router layout with global styles, font setup, and theme provider integrating dark/light modes.",
+      "files": [
+        "app/layout.tsx",
+        "app/globals.css",
+        "styles/globals.css",
+        "components/theme-provider.tsx"
+      ]
+    },
+    {
+      "name": "Landing page composition",
+      "description": "Top-level page that assembles hero and content sections (about, services, work, contact) plus footer and global overlays.",
+      "files": [
+        "app/page.tsx",
+        "components/sections/about-section.tsx",
+        "components/sections/services-section.tsx",
+        "components/sections/work-section.tsx",
+        "components/sections/contact-section.tsx",
+        "components/custom-cursor.tsx",
+        "components/grain-overlay.tsx",
+        "components/magnetic-button.tsx"
+      ]
+    },
+    {
+      "name": "UI component library",
+      "description": "Reusable UI primitives (buttons, dialogs, forms, navigation, feedback components, etc.) built on Radix UI and Tailwind for consistent styling.",
+      "files": [
+        "components/ui/button.tsx",
+        "components/ui/card.tsx",
+        "components/ui/dialog.tsx",
+        "components/ui/dropdown-menu.tsx",
+        "components/ui/input.tsx",
+        "components/ui/textarea.tsx",
+        "components/ui/tabs.tsx",
+        "components/ui/accordion.tsx",
+        "components/ui/toast.tsx",
+        "components/ui/toaster.tsx",
+        "components/ui/tooltip.tsx",
+        "components/ui/sidebar.tsx",
+        "components/ui/sheet.tsx",
+        "components/ui/alert-dialog.tsx",
+        "components/ui/carousel.tsx",
+        "components/ui/calendar.tsx",
+        "components/ui/table.tsx"
+      ]
+    },
+    {
+      "name": "Custom hooks",
+      "description": "Small hooks for device detection, scroll/visibility reveal animations, and toast notifications.",
+      "files": [
+        "hooks/use-mobile.ts",
+        "hooks/use-reveal.ts",
+        "hooks/use-toast.ts",
+        "components/ui/use-mobile.tsx",
+        "components/ui/use-toast.ts"
+      ]
+    },
+    {
+      "name": "Utility functions",
+      "description": "Shared utility helpers for class name merging and other small cross-cutting concerns.",
+      "files": [
+        "lib/utils.ts"
+      ]
+    }
+  ]
+}
+
+
+
+
+
+

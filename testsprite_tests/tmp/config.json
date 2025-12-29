@@ -1,0 +1,16 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:3000",
+  "executionArgs": {
+    "projectName": "portfolioTemplate",
+    "projectPath": "/Users/ddevv15/Desktop/projects/portfolioTemplate",
+    "testIds": [],
+    "additionalInstruction": "",
+    "envs": {
+      "API_KEY": "sk-user-BDQmC8Q4l5s_CTngWyanWBpX469IA3tAHZM8VVfC6NA5PaP9YEcNCdG_mFIrmwWWeumn3y1r9d7C-_Adbi9ZvrJ_ILA3OI-e0oj2MOIhWANrwEsKzeEgu2bKlDhjrUiUrsw"
+    }
+  },
+  "proxy": "http://86c6bb33-a62d-4d5d-b39c-4fcc16dec1ad:5WYRRIvblPhnZqNdJCWK3CLHVHZQJmqA@tun.testsprite.com:8080"
+}
