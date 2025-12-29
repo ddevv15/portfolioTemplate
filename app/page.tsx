@@ -327,12 +327,12 @@ export default function Home() {
           <p>
             All rights reserved. Developed and Managed by{" "}
             <a
-              href="https://devbrows.com"
+              href="https://krydcolabs.com"
               target="_blank"
               rel="noreferrer"
               className=" text-devbrows font-semibold text-foreground hover:underline "
             >
-              DevBrows
+              KRYD Colabs
             </a>
             .
           </p>
