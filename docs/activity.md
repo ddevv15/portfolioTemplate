@@ -32,3 +32,12 @@
   - Bootstrapped Testsprite, generated a frontend test plan, and executed Testsprite tests against the running dev server.
 - Prompt: "Test this project using Testsprite"
   - Completed the Testsprite frontend test run, generated `code_summary.json`, and wrote the consolidated test report to `testsprite_tests/testsprite-mcp-test-report.md`.
+
+## 2025-12-27
+
+- Prompt: React2Shell Security Bulletin (CVE-2025-55182) - Security upgrade required
+  - Identified vulnerable Next.js version 15.5.6 in package.json
+  - Upgraded Next.js from 15.5.6 to 15.5.9 (latest patched version for 15.5.x series)
+  - Ran `npm install` to update dependencies and lockfile
+  - Verified installation shows 0 vulnerabilities
+  - Updated activity.md with security upgrade details
